@@ -117,8 +117,6 @@
                     class="login-input password-input"
                     aria-describedby="password-instruction"
                     required
-                    min="6"
-                    max="12"
                   />
                   <span class="visually-hidden" id="password-instruction"
                     >Поле должно содержать минимум 6 символов и максимум 12
@@ -155,11 +153,7 @@
           </h2>
         </div>
         <div id="exhibitions-filters" class="tab-container exhibitions-filters">
-          <div
-            role="tablist"
-            class="box"
-            aria-labelled="Фильтр событий по дате"
-          >
+          <div role="tablist" class="box" aria-label="Фильтр событий по дате">
             <button
               role="tab"
               data-filter="all"
@@ -191,7 +185,7 @@
           <ul
             class="exhibitions-grid box"
             role="list"
-            aria-labelled="Список событий"
+            aria-label="Список событий"
           >
             <li class="exhibitions-card" data-filter="today">
               <a href="./temp.html" class="exhibitions-card-link">
@@ -294,7 +288,7 @@
             aria-expanded="true"
           >
             <ul
-              class="museums-grid box"
+              class="box museums-grid"
               role="list"
               aria-labelledby="Список музеев"
             >
@@ -473,8 +467,13 @@
               >Противодействие коррупции</a
             >
           </nav>
-          <div aria-label="Ссылки на социальные сеци">
-            <p class="social-links-title" aria-hidden="true">Соц. сети</p>
+          <div>
+            <p
+              class="social-links-title"
+              aria-label="Ссылки на социальные сеци"
+            >
+              Соц. сети
+            </p>
             <div class="social-links-container">
               <a href="mailto:example@mail.com">
                 <svg
